@@ -1,0 +1,115 @@
+body {
+	background: url(../img/bg.png) repeat #F1EEE7;
+	margin: 0;
+}
+
+.navigation {
+	margin-top: 50px;
+	
+	font-size: 24px;
+
+}
+
+.navigation .logo {
+	margin-top: 0;
+}
+
+.navigation .logo a {
+	background: url(../img/logo.png) no-repeat;
+	height: 130px;
+	width: 267px;
+}
+
+.navigation ul {
+	margin-left: 80px;
+	margin-right: 80px;
+}
+
+.navigation li {
+	margin-top: 70px;
+	padding-right: 20px;
+}
+
+.navigation li.active a {
+	color: #DEC561;
+	background-color: transparent;
+}
+
+.navigation li a {
+	color: #594A29;
+}
+
+.navigation li a:hover, .navigation li.active a:hover {
+	color: #DEC561;
+	text-decoration: none;
+	background-color: transparent;
+}
+
+.content {
+	margin-bottom: 60px;
+}
+
+.bordered {
+	border: 2px solid #CAC7B4;
+	padding: 2px;
+}
+
+.content .left-section {
+	border-right: 2px solid #CAC7B4;
+}
+
+.content .right-section h2 {
+	text-align: center;
+	color: #DEC561;
+}
+
+.content .right-section p {
+	margin-left: 20px;
+}
+
+
+.row-fluid .no-indent[class*="span"] {
+	margin-left:0;
+}
+
+.carousel-inner .item {
+	width: 650px;
+	height: 450px;
+	margin-left: 65px;
+}
+
+.carousel-indicators li {
+	background-color: #C3DAFA;
+}
+
+.footer .links, .footer .copyright {
+	background: #C3DAFA;
+	
+}
+
+.footer ul li {
+	float: left;
+	margin-right: 150px;
+	padding-left: 15px;
+	padding-top: 20px;
+	padding-bottom: 40px;
+}
+
+.footer ul li a {
+	color: #57492C;
+	font-size: 20px;
+}
+
+.footer p {
+	color: #57492C;
+	font-size: 14px;
+	padding-left: 15px;
+	padding-top: 5px;
+}
+
+.footer .copyright {
+	border-top: 2px solid #F8FFFF;
+}
+
+
+
