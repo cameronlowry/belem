@@ -1,0 +1,34 @@
+@media (max-width: 767px) {
+	.navigation {
+		font-size: 18px;
+		line-height: 18px;
+	}
+
+	.navigation .nav-tabs > li > a, .nav-pills > li > a {
+		line-height: 18px;
+	}
+
+	.navigation .logo {
+		width: 30%;
+	}
+
+	.navigation li {
+		margin-top: 6.5%;
+		padding-right: 0px;
+		width: 14%;
+	}
+
+	.navigation .logo {
+		width: 33%;
+		margin-left: 33%;
+		position: absolute;
+		float: none;
+		top: 20px;
+	}
+
+	.navigation li {
+		margin-top: 20%;
+		padding-right: 0px;
+		width: 20%;
+	}
+}
