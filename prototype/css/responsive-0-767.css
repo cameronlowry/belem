@@ -1,4 +1,9 @@
 @media (max-width: 767px) {
+
+	body {
+		background: url(../img/bg.png) repeat #F1EEE7;
+	}
+
 	.navigation {
 		font-size: 18px;
 		line-height: 18px;
