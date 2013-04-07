@@ -67,6 +67,51 @@ body {
 	margin-bottom: 60px;
 }
 
+.rotate {
+  -webkit-transform: rotate(-90deg);
+  -moz-transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
+  -o-transform: rotate(-90deg);
+  transform: rotate(-90deg);
+
+  /* also accepts left, right, top, bottom coordinates; not required, but a good idea for styling */
+  -webkit-transform-origin: 50% 50%;
+  -moz-transform-origin: 50% 50%;
+  -ms-transform-origin: 50% 50%;
+  -o-transform-origin: 50% 50%;
+  transform-origin: 50% 50%;
+
+  /* Should be unset in IE9+ I think. */
+  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+}
+
+.home {
+	position: absolute;
+	font-size: 54px;
+	margin-left: -102px;
+	margin-top: 64px;
+	font-weight: bolder;
+	color: #E39A71;
+}
+
+.cakes {
+	position: absolute;
+	font-size: 54px;
+	margin-left: -115px;
+	margin-top: 78px;
+	font-weight: bolder;
+	color: #94B799;
+}
+
+.contact {
+	position: absolute;
+	font-size: 54px;
+	margin-left: -151px;
+	margin-top: 117px;
+	font-weight: bolder;
+	color: #95B8B4;
+}
+
 .bordered {
 	border: 2px solid #CAC7B4;
 	padding: 2px;
@@ -74,6 +119,13 @@ body {
 
 .content .left-section {
 	border-right: 2px solid #CAC7B4;
+	text-align: center;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+.content .left-section img {
+	max-width: 100%;
 }
 
 .content .right-section h2 {
@@ -98,6 +150,18 @@ body {
 
 .carousel-indicators li {
 	background-color: #C3DAFA;
+}
+
+.form-horizontal {
+	margin-top: 20px;
+}
+
+.form-horizontal .control-label {
+	width: 70px;
+}
+
+.form-horizontal .controls {
+	margin-left: 80px;
 }
 
 .footer .links, .footer .copyright {

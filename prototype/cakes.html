@@ -17,9 +17,9 @@
 	    <div class="row-fluid">
 	    	<div class="span12 navigation">
 	    		<ul class="nav nav-pills">
-					<li class="active"><a href="index.html">HOME</a></li>
+					<li><a href="index.html">HOME</a></li>
 					<li><a href="#about">ABOUT</a></li>
-					<li><a href="cakes.html">CAKES</a></li>
+					<li class="active"><a href="cakes.html">CAKES</a></li>
 					<li class="logo">
 						<a href="#home">
 							<img src='img/logo.png' />
@@ -30,18 +30,32 @@
 	    	</div>
 		</div>
 	</div>
-
 	<div class="content container bordered">
-		<span class='rotate home'>HOME</span>
+		<span class='rotate cakes'>CAKES</span>
 		<div class="row-fluid">
 	    	<div class="span8 left-section">
-	    		<img src='img/bakery.jpg' />
+	    		<div id="myCarousel" class="carousel slide">
+				  <ol class="carousel-indicators">
+				    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+				    <li data-target="#myCarousel" data-slide-to="1"></li>
+				    <li data-target="#myCarousel" data-slide-to="2"></li>
+				  </ol>
+				  <!-- Carousel items -->
+				  <div class="carousel-inner">
+				    <div class="active item">
+				    	<img src="img/carousel_placeholder1.png"></img>
+				    </div>
+				    <div class="item"></div>
+				    <div class="item"></div>
+				  </div>
+				  <!-- Carousel nav -->
+				  <a class="carousel-control left" href="#myCarousel" data-slide="prev">&lsaquo;</a>
+				  <a class="carousel-control right" href="#myCarousel" data-slide="next">&rsaquo;</a>
+				</div>
 	    	</div>
 	    	<div class="span4 right-section no-indent">
-	    		<h2>Belem</h2>
-	    		<p>Our confectionery is named after the Belém Tower which was built in the early sixteenth century in Lisbon, Portugal. </p>
-	    		<p>Its construction was to commemorate Vasco da Gama's expeditions. However, it’s also believed that the Tower was to aid in defending the harbour and also to be a type of customs outpost. </p>
-	    		<p>This elegant construction has become one of the symbols of the city, a memorial to Portuguese power as it was during the Age of Discovery.</p>    		
+	    		<h2>Heading</h2>
+	    		<p>Cake is a form of bread or bread-like food. In its modern forms, it is typically a sweet baked dessert. In its oldest forms, cakes were normally fried breads or cheesecakes, and normally had a disk shape. Determining whether a given food should be classified as bread, cake, or pastry can be difficult.</p>    		
 	    	</div>
 		</div>
 	</div>
@@ -73,6 +87,5 @@
 	
     <script src="js/jquery.js"></script>
     <script src="js/bootstrap.min.js"></script>
-    <script src="js/main.js"></script>
   </body>
 </html>
