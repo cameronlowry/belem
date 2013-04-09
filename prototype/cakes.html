@@ -17,53 +17,80 @@
 	    <div class="row-fluid">
 	    	<div class="span12 navigation">
 	    		<ul class="nav nav-pills">
-					<li><a href="index.html">HOME</a></li>
-					<li><a href="#about">ABOUT</a></li>
+					<li class="divider-right"><a href="index.html">HOME</a></li>
+					<li class="divider-right"><a href="#about">ABOUT</a></li>
 					<li class="active"><a href="cakes.html">CAKES</a></li>
 					<li class="logo">
 						<a href="#home">
 							<img src='img/logo.png' />
 						</a></li>
-					<li><a href="#order">ORDER</a></li>
+					<li class="divider-right"><a href="#order">ORDER</a></li>
 					<li><a href="contact.html">CONTACT</a></li>
 	    		</ul>
 	    	</div>
 		</div>
-	</div>
-	<div class="content container bordered">
-		<span class='rotate cakes'>CAKES</span>
+		<div class="content bordered">
+		<span class='rotate cakes hidden-phone'>CAKES</span>
 		<div class="row-fluid">
-	    	<div class="span8 left-section">
-	    		<div id="myCarousel" class="carousel slide">
-				  <ol class="carousel-indicators">
-				    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-				    <li data-target="#myCarousel" data-slide-to="1"></li>
-				    <li data-target="#myCarousel" data-slide-to="2"></li>
-				  </ol>
-				  <!-- Carousel items -->
-				  <div class="carousel-inner">
-				    <div class="active item">
-				    	<img src="img/carousel_placeholder1.png"></img>
-				    </div>
-				    <div class="item"></div>
-				    <div class="item"></div>
-				  </div>
-				  <!-- Carousel nav -->
-				  <a class="carousel-control left" href="#myCarousel" data-slide="prev">&lsaquo;</a>
-				  <a class="carousel-control right" href="#myCarousel" data-slide="next">&rsaquo;</a>
-				</div>
+	    	<div class="span8 left-section image-gallery">
+	    		<div class="current-image-container">
+	    			<div class='prev'><a class="carousel-control left" href="#myCarousel" data-slide="prev">&lsaquo;</a></div>
+		    		<img class="current-image" src="img/c1.jpg" />
+		    		<img class="close" src="img/close.png"/>
+		    		<div class='next'><a class="carousel-control right" href="#myCarousel" data-slide="next">&rsaquo;</a></div>
+	    		</div>
+	    		<div class="row-fluid grid">
+	    			<div class="span3">
+	    				<img src="img/c1.jpg">
+	    			</div>
+	    			<div class="span3">
+	    				<img src="img/c2.jpg">
+	    			</div>
+	    			<div class="span3">
+	    				<img src="img/c3.jpg">
+	    			</div>
+	    			<div class="span3">
+	    				<img src="img/c4.jpg">
+	    			</div>
+    			</div>
+    			<div class="row-fluid grid">
+	    			<div class="span3">
+	    				<img src="img/c5.jpg">
+	    			</div>
+	    			<div class="span3">
+	    				<img src="img/c6.jpg">
+	    			</div>
+	    			<div class="span3">
+	    				<img src="img/c7.jpg">
+	    			</div>
+	    			<div class="span3">
+	    				<img src="img/c8.jpg">
+	    			</div>
+    			</div>
+    			<div class="row-fluid grid">
+	    			<div class="span3">
+	    				<img src="img/c9.jpg">
+	    			</div>
+	    			<div class="span3">
+	    				<img src="img/c1.jpg">
+	    			</div>
+	    			<div class="span3">
+	    				<img src="img/c2.jpg">
+	    			</div>
+	    			<div class="span3">
+	    				<img src="img/c3.jpg">
+	    			</div>
+    			</div>
 	    	</div>
 	    	<div class="span4 right-section no-indent">
-	    		<h2>Heading</h2>
+	    		<h3>Cakes</h3>
 	    		<p>Cake is a form of bread or bread-like food. In its modern forms, it is typically a sweet baked dessert. In its oldest forms, cakes were normally fried breads or cheesecakes, and normally had a disk shape. Determining whether a given food should be classified as bread, cake, or pastry can be difficult.</p>    		
 	    	</div>
 		</div>
-	</div>
-	<div class="footer">
-		
+		</div>
+		<div class="footer">
 			<div class="row-fluid">
 		    	<div class="span12">
-		    		
 		    		<div class="row-fluid links">
 		    			<div class="container">
 			    			<ul class="unstyled">
@@ -80,12 +107,14 @@
 	    					<p>Copyright C 2012 Web Design. All rights reserved. A C & M Lowry product</p>
 						</div>
 					</div>
-
 		    	</div>
 			</div>
 		</div>
+	</div>
+	
 	
     <script src="js/jquery.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
   </body>
 </html>

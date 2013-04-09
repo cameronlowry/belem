@@ -8,17 +8,5 @@
 		line-height: 16px;
 	}
 
-	.navigation .logo {
-		width: 40%;
-		margin-left: 29.5%;
-		position: absolute;
-		float: none;
-		top: 20px;
-	}
-
-	.navigation li {
-		margin-top: 20%;
-		padding-right: 0px;
-		width: 20%;
-	}
+	
 }
