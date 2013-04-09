@@ -3,14 +3,14 @@ $(function() {
 		function() { 
 			$('.current-image').attr('src',this.src);
 			$('.current-image-container').css('display','block');
-			$('.current-image-container').fadeTo(100, 1, function() {
+			$('.current-image-container').fadeTo(300, 1, function() {
 		      // Animation complete.
 		    });
 		});
 
 	$('.close').click(
 		function() {
-			$('.current-image-container').fadeTo(100, 0.5, function() {
+			$('.current-image-container').fadeTo(300, 0, function() {
 		      $('.current-image-container').css('display','none');
 		    });
 
