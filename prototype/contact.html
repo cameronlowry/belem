@@ -4,10 +4,11 @@
     <title>Belem 2.0 prototype</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
     <!-- Bootstrap -->
     <link href="css/bootstrap.css" rel="stylesheet" media="screen">
     <link href="css/bootstrap-responsive.css" rel="stylesheet">
-    <link href="css/main.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">   
     <link href="css/responsive-0-767.css" rel="stylesheet">
     <link href="css/responsive-0-469.css" rel="stylesheet">
     <link href="css/responsive-768-979.css" rel="stylesheet">
@@ -30,52 +31,51 @@
 	    	</div>
 		</div>
 		<div class="content bordered">
-		<span class='rotate contact hidden-phone'>CONTACT</span>
-		<div class="row-fluid">
-	    	<div class="span8 left-section">
-	    		<iframe width="100%" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.co.za/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=corner+madiba+st+and+lilian+ngoyi+st&amp;aq=&amp;sll=-25.744801,28.192742&amp;sspn=0.013877,0.02635&amp;ie=UTF8&amp;hq=&amp;hnear=Madiba+St,+Pretoria+Central,+Pretoria,+Gauteng+0002&amp;t=m&amp;z=14&amp;ll=-25.744642,28.192829&amp;output=embed"></iframe><br /><small><a href="https://maps.google.co.za/maps?f=q&amp;source=embed&amp;hl=en&amp;geocode=&amp;q=corner+madiba+st+and+lilian+ngoyi+st&amp;aq=&amp;sll=-25.744801,28.192742&amp;sspn=0.013877,0.02635&amp;ie=UTF8&amp;hq=&amp;hnear=Madiba+St,+Pretoria+Central,+Pretoria,+Gauteng+0002&amp;t=m&amp;z=14&amp;ll=-25.744642,28.192829" style="color:#0000FF;text-align:left">View Larger Map</a></small>
-	    		<p>ISIVUNO HOUSE CORNER MADIBA STREET & LILIAN NGOYI STREET</p>
-	    		<p>012 - 321 7537</p>
-	    		<p>Trading hours:</p>
-	    		<p>Monday to Friday 07h00 – 17h45</p>
-				<p>Saturday 07h00 – 15h00</p>
-	    	</div>
-	    	<div class="span4 right-section no-indent">
-	    		<h3>Contact us</h3>
+			<span class='rotate contact hidden-phone'>CONTACT</span>
+			<div class="row-fluid">
+		    	<div class="span8 left-section">
+		    		<div id="map-canvas"></div>
+		    		<p>ISIVUNO HOUSE CORNER MADIBA STREET & LILIAN NGOYI STREET</p>
+		    		<p>012 - 321 7537</p>
+		    		<p>Trading hours:</p>
+		    		<p>Monday to Friday 07h00 – 17h45</p>
+					<p>Saturday 07h00 – 15h00</p>
+		    	</div>
+		    	<div class="span4 right-section no-indent">
+		    		<h3>Contact us</h3>
 
-	    		<form class="form-horizontal">
-				  
-				  <div class="control-group">
+		    		<form class="form-horizontal">
+					  
+					  <div class="control-group">
 
-				    <div class="controls">
-				      <input type="text" id="inputName" placeholder="Name">
-				    </div>
-				  </div>
-				  <div class="control-group">
+					    <div class="controls">
+					      <input type="text" id="inputName" placeholder="Name">
+					    </div>
+					  </div>
+					  <div class="control-group">
 
-				    <div class="controls">
-				      <input type="text" id="inputEmail" placeholder="Email">
-				    </div>
-				  </div>
-				  <div class="control-group">
+					    <div class="controls">
+					      <input type="text" id="inputEmail" placeholder="Email">
+					    </div>
+					  </div>
+					  <div class="control-group">
 
-				    <div class="controls">
-				      <textarea rows="10" placeholder="Message"></textarea>
-				    </div>
-				  </div>
-				  
-				  <div class="control-group">
-				    <div class="controls">
-				      <button type="submit" class="btn">Send</button>
-				    </div>
-				  </div>
-				</form>
+					    <div class="controls">
+					      <textarea rows="10" placeholder="Message"></textarea>
+					    </div>
+					  </div>
+					  
+					  <div class="control-group">
+					    <div class="controls">
+					      <button type="submit" class="btn">Send</button>
+					    </div>
+					  </div>
+					</form>
 
-	    	</div>
+		    	</div>
+			</div>
 		</div>
-	</div>
-	<div class="footer">
-		
+		<div class="footer">		
 			<div class="row-fluid">
 		    	<div class="span12">
 		    		
@@ -105,5 +105,9 @@
 	
     <script src="js/jquery.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script type="text/javascript"
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA_c0Z5owU-gGpAkwyRxNRn4Gc2-Czqp9A&sensor=false">
+    </script>
+    <script src="js/main.js"></script>
   </body>
 </html>
