@@ -115,8 +115,7 @@ $(function() {
            addMarker(Belem);
     }
 
-
-    if($('google').length > 0) {
+    if(google.maps) {
 		google.maps.event.addDomListener(window, 'load', initialize);
 	}
 
