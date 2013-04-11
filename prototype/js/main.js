@@ -1,81 +1,62 @@
 $(function() {
 	if($('.image-gallery').length > 0) {
 		$('.content .left-section.image-gallery .grid img').click( 
-		function() { 
-			$('.current-image.active').attr('src',this.src);
+		function() {
+			swapImage($('.content .left-section.image-gallery .grid img').index(this));
 			$('.current-image-container').css('display','block');
-			$('.current-image-container').fadeTo(300, 1, function() {
+			$('.current-image-container, .next, .prev').fadeTo(600, 1, function() {
 		      // Animation complete.
 		    });
 		});
 
 	$('.close').click(
 		function() {
-			$('.current-image-container').fadeTo(300, 0, function() {
+			$('.current-image-container, .next, .prev').fadeTo(300, 0, function() {
 		      $('.current-image-container').css('display','none');
 		    });
 
 		});
 
-	$('.next').click(
-		function() {
-			var src = $('.current-image.active').attr('src');
-			var index = src.indexOf('.jpg');
-			var character = src.substring(src.indexOf('s/c') + 3,index);
-			var integ = parseInt(character);
-			console.log(character);
-			if(integ + 1 <= 12) {
-				var $active = $('.current-image.active');
-				var $next = $('.current-image.inactive');
-				$next.attr('src', src.replace(character, integ + 1));
-				$next.show().css('z-index',2);//move the next image up the pile
-				$active.fadeOut(300,function(){//fade out the top image
-					$active.css('z-index',1).hide().removeClass('active').addClass('inactive');//reset the z-index and unhide the image
-					$next.css('z-index',3).removeClass('inactive').addClass('active');//make the next image the top one
-			    });	
-
-			}
-			else {
-				var $active = $('.current-image.active');
-				var $next = $('.current-image.inactive');
-				$next.attr('src', 'img/cakes/c1.jpg');
-				$next.show().css('z-index',2);//move the next image up the pile
-				$active.fadeOut(300,function(){//fade out the top image
-					$active.css('z-index',1).hide().removeClass('active').addClass('inactive');//reset the z-index and unhide the image
-					$next.css('z-index',3).removeClass('inactive').addClass('active');//make the next image the top one
-			    });
-			}
-
-		});
+	$('.next').click(		
+	function() {
+		var total = 11;		
+		var index = $('.current-image.active').data('index');
+		
+		if(index + 1 <= total) {
+			index++;					
+		}
+		else {
+			index = 0;	
+		}
+		swapImage(index);
+	});
 
 	$('.prev').click(
 		function() {
-			var src = $('.current-image.active').attr('src');
-			var index = src.indexOf('.jpg');
-			var character = src.substring(src.indexOf('s/c') + 3,index);
-			var integ = parseInt(character);
-			if(integ - 1 > 0) {
-				var $active = $('.current-image.active');
-				var $next = $('.current-image.inactive');
-				$next.attr('src', src.replace(character, integ - 1));
-				$next.show().css('z-index',2);//move the next image up the pile
-				$active.fadeOut(300,function() {//fade out the top image
-					$active.css('z-index',1).hide().removeClass('active').addClass('inactive');//reset the z-index and unhide the image
-					$next.css('z-index',3).removeClass('inactive').addClass('active');//make the next image the top one
-			    });				
+			var index = $('.current-image.active').data('index');
+			
+			if(index - 1 > 0) {
+				index--;					
 			}
 			else {
-				var $active = $('.current-image.active');
-				var $next = $('.current-image.inactive');
-				$next.attr('src', 'img/cakes/c12.jpg');
-				$next.show().css('z-index',2);//move the next image up the pile
-				$active.fadeOut(300,function(){//fade out the top image
-					$active.css('z-index',1).hide().removeClass('active').addClass('inactive');//reset the z-index and unhide the image
-					$next.css('z-index',3).removeClass('inactive').addClass('active');//make the next image the top one
-			    });
+				index = total;	
 			}
-
+			swapImage(index);
 		});
+	}
+
+	function swapImage(index) {
+		var $active = $('.current-image.active');
+		var $next = $('.current-image.inactive');
+
+		$next.attr('src', $($('.content .left-section.image-gallery .grid img').get(index)).attr('src'));
+		$next.data('index', index);
+		$active.data('index', index);
+		$next.show().css('z-index',2);//move the next image up the pile
+		$active.fadeOut(400,function(){//fade out the top image
+			$active.css('z-index',1).removeClass('active').addClass('inactive');//reset the z-index and unhide the image
+			$next.css('z-index',3).removeClass('inactive').addClass('active');//make the next image the top one
+	    });
 	}
 
 	var map;

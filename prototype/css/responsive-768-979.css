@@ -15,4 +15,16 @@
 		margin-top: 55px;
 		padding-right: 0px;
 	}
+
+	.content .current-image-container {
+		position: absolute;
+		top: 50%;
+	    left: 50%;
+	    width: 320px;
+	    height: 320px;
+	    margin-left: -160px;
+	    margin-top: -160px;
+	    z-index: 1;
+	    border: 3px solid RGBA(100,100,100,0.2);
+	}
 }
