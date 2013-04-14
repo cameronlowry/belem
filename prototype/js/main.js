@@ -2,7 +2,7 @@ $(function() {
 	var total = 11;
 	
 	
-	if($('.carousel-inner').length > 0) {
+	if($('.swiper-container').length > 0) {
 
 	
 	//Main Swiper
