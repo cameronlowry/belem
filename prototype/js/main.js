@@ -1,41 +1,74 @@
 $(function() {
 	var total = 11;
+	
+	
+	if($('.carousel-inner').length > 0) {
+
+	
+	//Main Swiper
+	var swiper = new Swiper('.swiper1', {
+		loop:true,
+		grabCursor: true
+	});
+
+	$('.swiper-container .right').click( function() {
+		swiper.swipeNext();
+	});
+
+	$('.swiper-container .left').click( function() {
+		swiper.swipePrev();
+	});
+}
 
 	if($('.image-gallery').length > 0) {
 
+		
+
 		function loadImages(i) {
 			var image = $('.content .left-section.image-gallery .grid img.a').get(i);
+			var $parent = $(image).parent();
+
 			$(image).attr('src','');
 			$(image).attr('src',"img/cakes/"+(i+1)+".jpg").load(function() {  
 		        if(i <= total) {
 			        $(image).fadeTo(0.3,1, function() {
+			        	$parent.remove('#circularG');
 			        	loadImages(i+1);
 			        });
 			    }
 		    });
 		}
-		
+
+
+		$('.content .left-section.image-gallery .grid .span4').append($('#circularG').show());
+
 		loadImages(0);
+		$('.next, .prev, .close, .current-image').click( 
+		function(e) {
+			e.stopPropagation();
+		});
 
 		$('.content .left-section.image-gallery .grid img').click( 
 		function() {
 			swapImage($('.content .left-section.image-gallery .grid img').index(this));
-			$('.current-image-container.visible-phone').css('width', 'auto');
-			$('.current-image-container.visible-phone').css('height', 'auto');
-			$('.current-image-container.visible-phone').css('padding', '10%');
-
-			$('.current-image-container').css('z-index','2');
-			
-			$('.current-image-container, .next, .prev, .close').fadeTo(600, 1, function() {
-		      // Animation complete.
+			$('.current-image-container.visible-phone').css('width', '100%');
+			$('.current-image-container.visible-phone').css('height', '100%');
+			$('body').css('overflow', 'hidden');
+			$('.current-image-container').css('z-index','2');		
+			$('.current-image-container.visible-phone').css('top',$(window).scrollTop());
+			$('.current-image-container').fadeTo(600, 1, function() {
+		      setTimeout(function(){$('.next, .prev, .close').fadeTo(1200, 0.7);},600);
 		    });
 		});
 
-		$('.close').click(
+
+
+		$('.close, .current-image-container.visible-phone').click(
 		function() {
 			$('.current-image-container, .next, .prev, .close').fadeTo(300, 0, function() {
 		      $('.current-image-container').css('z-index','0');
 		      $('.current-image.active, .current-image.inactive').attr('src','');
+		      $('body').css('overflow', 'auto');
 		    });
 
 		});

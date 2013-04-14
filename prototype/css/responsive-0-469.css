@@ -8,9 +8,7 @@
 		line-height: 16px;
 	}
 
-	.navigation li {
-		margin-top: 30%;
-	}
+	
 
 	.content .current-image-container {
 		position: absolute;
@@ -30,12 +28,7 @@
 		display: none;
 	}
 
-	.carousel-control {
-		width:30px;
-		height:30px;
-		line-height: 24px;
-		font-size: 40px;
-	}
+	
 
 	
 

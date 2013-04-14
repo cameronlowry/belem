@@ -2,11 +2,17 @@
 
 	body {
 		background: url(../img/bg.png) repeat #F1EEE7;
+		padding:0;
+	}
+
+	.navbar-fixed-top, .navbar-fixed-bottom, .navbar-static-top {
+		margin:0;
 	}
 
 	.navigation {
 		font-size: 16px;
 		line-height: 18px;
+		margin-top: 0;
 	}
 
 	.navigation .nav-tabs > li > a, .nav-pills > li > a {
@@ -27,9 +33,16 @@
 	}
 
 	.navigation li {
-		margin-top: 25%;
+		margin-top: 0;
 		padding-right: 0px;
-		width: 20%;
+		width: auto;
+		margin-left: -2px;
+		margin-right: -2px;
+	}
+
+	.content .left-section, .content .right-section {
+		padding-left: 10px;
+		padding-right: 10px;
 	}
 
 	.content .left-section {
