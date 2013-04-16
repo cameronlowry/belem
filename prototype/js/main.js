@@ -8,7 +8,15 @@ $(function() {
 	//Main Swiper
 	var swiper = new Swiper('.swiper1', {
 		loop:true,
-		grabCursor: true
+		grabCursor: true,
+		
+	});
+
+	$(window).resize(function(){
+		var wid = $('.span8.left-section').width();
+		$('.swiper-container, .swiper-slide, .swiper-slide img').width(wid);
+		
+		
 	});
 
 	$('.swiper-container .right').click( function() {
@@ -50,14 +58,15 @@ $(function() {
 
 		$('.content .left-section.image-gallery .grid img').click( 
 		function() {
-			swapImage($('.content .left-section.image-gallery .grid img').index(this));
+			var index = $('.content .left-section.image-gallery .grid img').index(this);
+			swapImage(index);
 			$('.current-image-container.visible-phone').css('width', '100%');
 			$('.current-image-container.visible-phone').css('height', '100%');
 			$('body').css('overflow', 'hidden');
 			$('.current-image-container').css('z-index','2');		
 			$('.current-image-container.visible-phone').css('top',$(window).scrollTop());
 			$('.current-image-container').fadeTo(600, 1, function() {
-		      setTimeout(function(){$('.next, .prev, .close').fadeTo(1200, 0.7);},600);
+		      setTimeout(function(){$('.next, .prev, .close').fadeTo(200*index, 0.7);},600);
 		    });
 		});
 

@@ -170,8 +170,51 @@ img {
 	padding: 2px;
 }
 
+.navbar-inverse.navbar-fixed-top.visible-phone {
+	position: absolute;	
+}
+
+
+
+#map-canvas.map {
+	min-height: 100%;
+	margin-bottom: 0;
+	height: auto;
+}
+.content .left-section.map {
+    position: absolute;
+    top: 40px;
+    bottom: 5px;
+    left: 0;
+    right: 0;
+}
+
+.footer.map {
+	height: 40px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	position: absolute;
+	bottom: 0;
+	background-color: #C3DAFA;
+	font-size: 12px;
+}
+
+.footer.map p {
+	font-size: 10px;
+}
+
+.footer.map ul li {
+	padding-top: 0;
+	padding-bottom: 0px;
+}
+
+.footer.map ul li a {
+	font-size: 12px;
+}
+
 .content .left-section {
 	border-right: 2px solid #CAC7B4;
+	margin-right:-2px;
 	text-align: left;
 	padding-top: 13px;
 	padding-bottom: 10px;
@@ -305,6 +348,12 @@ img {
 .content img.current-image, .content img.close {
 	filter: none;
 	-webkit-filter: none; 
+}
+
+.content .right-section {
+	border-left: 2px solid #CAC7B4;
+	margin-left: -2px;
+	margin-bottom: -3px;
 }
 
 .content .right-section h3 {

@@ -49,6 +49,10 @@
 		border-right :0;
 	}
 
+	.content .right-section {
+		border-left: 0;
+	}
+
 	.form-horizontal {
 		text-align: center;
 		margin-right: 0;
@@ -93,6 +97,8 @@
 	.content .left-section {
 		padding-bottom: 0;
 	}
+
+	
 
 
 }

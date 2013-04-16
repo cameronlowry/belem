@@ -91,7 +91,7 @@ var Swiper = function (selector, params, callback) {
         slidesPerGroup : 1,
         simulateTouch : true,
         followFinger : true,
-        autoPlay:false,
+        autoPlay:true,
         onlyExternal : false,
         createPagination : true,
         pagination : false,
