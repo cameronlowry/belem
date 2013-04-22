@@ -40,9 +40,9 @@
 		margin-right: -2px;
 	}
 
-	.content .left-section, .content .right-section {
-		padding-left: 10px;
-		padding-right: 10px;
+	.content .left-section, .content .right-section, .bordered {
+		padding-left: 0px;
+		padding-right: 0px;
 	}
 
 	.content .left-section {
