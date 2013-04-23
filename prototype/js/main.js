@@ -87,7 +87,7 @@ $(function() {
 		      	if($(window).width() < 768) {
 		      		$('body').css('overflow', 'auto');
 	      		}
-					$('.current-image-container').css('z-index','0');
+					$('.current-image-container').css('z-index','-10');
 			    });
 		}
 		
