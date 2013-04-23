@@ -5,18 +5,24 @@
 
 	.navigation {
 		font-size: 18px;
+		font-weight: bold;
 	}
 
 	.navigation .nav-tabs > li > a, .nav-pills > li > a {
 		line-height: 20px;
 	}
 
+	.navigation ul {
+		margin-left:0;
+	}
+
 	.navigation li {
 		margin-top: 55px;
 		padding-right: 0px;
+		width: 13%;
 	}
 
-	.content .current-image-container {
+	.content .current-image-container.hidden-phone {
 		position: absolute;
 		top: 50%;
 	    left: 50%;
@@ -32,7 +38,5 @@
 		margin-top: 50px;
 	}
 
-	.carousel-control {
-		top: 60%;
-	}
+	
 }

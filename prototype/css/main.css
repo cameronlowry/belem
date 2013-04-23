@@ -5,6 +5,41 @@ body {
 	color: #5D482B;
 }
 
+@font-face {
+    font-family: 'LetterGothicStdMedium';
+    src: url('../font/lettergothicstd/lettergothicstd.eot');
+    src: url('../font/lettergothicstd/lettergothicstd.eot?#iefix') format('embedded-opentype'),
+         url('../font/lettergothicstd/lettergothicstd.woff') format('woff'),
+         url('../font/lettergothicstd/lettergothicstd.ttf') format('truetype'),
+         url('../font/lettergothicstd/lettergothicstd.svg#LetterGothicStdMedium') format('svg');
+ 	font-weight: normal;
+    font-style: medium;
+}
+
+@font-face {
+    font-family: 'coolveticaregular';
+    src: url('../font/coolveticarg/coolvetica_rg-webfont.eot');
+    src: url('../font/coolveticarg/coolvetica_rg-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../font/coolveticarg/coolvetica_rg-webfont.woff') format('woff'),
+         url('../font/coolveticarg/coolvetica_rg-webfont.ttf') format('truetype'),
+         url('../font/coolveticarg/coolvetica_rg-webfont.svg#coolveticaregular') format('svg');
+    font-weight: bold;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'champagnelimousinesbold';
+    src: url('../font/champagnelimousinesbold/champagne__limousines_bold-webfont.eot');
+    src: url('../font/champagnelimousinesbold/champagne__limousines_bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../font/champagnelimousinesbold/champagne__limousines_bold-webfont.woff') format('woff'),
+         url('../font/champagnelimousinesbold/champagne__limousines_bold-webfont.ttf') format('truetype'),
+         url('../font/champagnelimousinesbold/champagne__limousines_bold-webfont.svg#champagne__limousinesbold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+}
+
+
 img {
 	max-width: none;
 }
@@ -16,6 +51,8 @@ img {
 .navigation {
 	margin-top: 20px;	
 	font-size: 20px;
+	font-family: 'champagnelimousinesbold', Arial;
+	font-weight: bold;
 }
 
 .navbar-inverse .navbar-inner {
@@ -40,6 +77,15 @@ img {
 .navbar-inverse .brand:hover {
 	color: #B3A888;
 }
+
+.navbar-inverse .brand img {
+	color: #57492C;
+	height: 35px;
+    margin-top: -10px;
+    margin-right: 8px;
+}
+    
+
 
 .navbar-inverse .nav-collapse .nav > li > a, .navbar-inverse .nav-collapse .dropdown-menu a {
 	color: #5D4A2C;
@@ -68,13 +114,14 @@ img {
 }
 
 .navigation ul {
+	margin-left: -7px;
 	
 }
 
 .navigation li {
 	margin-top: 59px;
 	padding-right: 0px;
-	width: 14%;
+	width: 13.5%;
 	box-sizing: border-box;
 	border-left: 2px solid transparent;
 	border-right: 2px solid transparent;
@@ -136,32 +183,29 @@ img {
 
   /* Should be unset in IE9+ I think. */
   filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+  font-size: 60px;
+  font-family: 'coolveticaregular', Arial;
+  font-weight: bold;
 }
 
 .home {
-	position: absolute;
-	font-size: 54px;
-	margin-left: -102px;
-	margin-top: 64px;
-	font-weight: bolder;
+	position: absolute;	
+	margin-left: -93px;
+	margin-top: 59px;	
 	color: #E39A71;
 }
 
 .cakes {
 	position: absolute;
-	font-size: 54px;
-	margin-left: -115px;
-	margin-top: 78px;
-	font-weight: bolder;
+	margin-left: -107px;
+	margin-top: 73px;
 	color: #94B799;
 }
 
 .contact {
 	position: absolute;
-	font-size: 54px;
-	margin-left: -151px;
-	margin-top: 117px;
-	font-weight: bolder;
+	margin-left: -145px;
+	margin-top: 110px;
 	color: #95B8B4;
 }
 
@@ -182,6 +226,12 @@ img {
     left: 0;
     right: 0;
 }
+
+.content .left-section p {
+	font-family: 'Didact Gothic', Arial;
+	font-weight: normal;
+}
+
 
 .footer.map {
 	height: 40px;
@@ -348,15 +398,20 @@ img {
 	border-left: 2px solid #CAC7B4;
 	margin-left: -2px;
 	margin-bottom: -3px;
+	font-family: 'Didact Gothic', Arial;
+	font-weight: normal;
 }
 
 .content .right-section h3 {
 	text-align: center;
 	color: #DEC561;
+	font-family: 'champagnelimousinesbold', Arial;
+	font-weight: bold;
 }
 
 .content .right-section p {
 	margin-left: 20px;
+	font-size: 12pt;
 }
 
 
@@ -437,11 +492,21 @@ img {
 	position: absolute;
 	left: 0;
 	width: 100%;
+
 }
 
-.footer .links, .footer .copyright {
+.footer .links {
+	font-family: 'champagnelimousinesbold', Arial;
+	font-weight: normal;
 	background: #C3DAFA;
-	
+	font-size: 16pt;
+}
+
+.footer .copyright {
+	font-family: 'LetterGothicStdMedium', Arial;
+	font-weight: normal;
+	background: #C3DAFA;
+	font-size: 11pt;
 }
 
 .footer ul li {
@@ -454,7 +519,7 @@ img {
 
 .footer ul li a {
 	color: #57492C;
-	font-size: 20px;
+	
 }
 
 .footer p {
@@ -469,6 +534,8 @@ img {
 
 input, textarea {
 	width: 100%;
+	font-family: 'Didact Gothic', Arial;
+	font-weight: normal;
 }
 
 textarea:focus, input[type="text"]:focus, input[type="password"]:focus, input[type="datetime"]:focus, input[type="datetime-local"]:focus, input[type="date"]:focus, input[type="month"]:focus, input[type="time"]:focus, input[type="week"]:focus, input[type="number"]:focus, input[type="email"]:focus, input[type="url"]:focus, input[type="search"]:focus, input[type="tel"]:focus, input[type="color"]:focus, .uneditable-input:focus {
@@ -495,6 +562,8 @@ textarea, input[type="text"], input[type="password"], input[type="datetime"], in
           border-radius: 0px;
 	background: transparent;
 	color: #5D482B;
+	font-family: 'Didact Gothic', Arial;
+	font-weight: normal;
 }
 
 .form-horizontal .btn:hover {
