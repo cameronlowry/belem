@@ -42,7 +42,10 @@ body {
 
 img {
 	max-width: none;
+
 }
+
+
 
 .container {
 	max-width: 960px;
@@ -60,6 +63,14 @@ img {
 	background-image: none;
 	border:0;
 }
+
+.navbar-inverse .navbar-inner.map {
+    position: absolute;
+    z-index: 10;
+    right: 0;
+    left: 0;
+}
+
 
 .navbar-inverse .btn-navbar {
 	background-image: none;
@@ -150,7 +161,10 @@ img {
 	text-decoration: none;
 	background-color: transparent;
 }
-
+.centered-btns_tabs a, .transparent-btns_tabs a, .large-btns_tabs a {
+	height: 12px;
+	width: 12px;
+}
 .navigation .nav-tabs > li > a, .nav-pills > li > a {
 	padding : 0;
 	margin: 0;
@@ -503,7 +517,7 @@ img {
 }
 
 .footer .copyright {
-	font-family: 'LetterGothicStdMedium', Arial;
+	font-family: 'Didact Gothic', Arial;
 	font-weight: normal;
 	background: #C3DAFA;
 	font-size: 11pt;

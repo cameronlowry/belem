@@ -45,7 +45,7 @@ $(function() {
 		        if(i < total) {
 			        $(image).fadeTo(0.3,1, function() {
 			        	$parent.remove('#circularG');
-			        	setTimeout(function(){loadImages(i+1);},15*i);
+			        	setTimeout(function(){loadImages(i+1);},60+(i*total));
 			        });
 			    } else {
 			    	$('.content .left-section.image-gallery .grid img').css('display','block');
@@ -55,7 +55,7 @@ $(function() {
 
 		$('.content .left-section.image-gallery .grid .span4').append($('#circularG').show());
 
-		loadImages(0);
+		setTimeout(loadImages(0), 300);
 
 		$('.next, .prev, .close, .current-image').click( 
 		function(e) {
