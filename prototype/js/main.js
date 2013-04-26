@@ -64,8 +64,11 @@ $(function() {
 
 		$('.content .left-section.image-gallery .grid img').click( 
 		function() {
-			
-			var index = $('.content .left-section.image-gallery .grid img').index(this);
+			var phone = ".content .left-section.image-gallery .grid .span4.hidden-phone img";
+			if($(window).width() < 768) {
+				phone = ".content .left-section.image-gallery .grid .span4.visible-phone img";
+			}
+			var index = $(phone).index(this);
 			swapImage(index);
 			$('.current-image-container.visible-phone').css('width', '100%');
 			$('.current-image-container.visible-phone').css('height', '100%');
@@ -75,10 +78,11 @@ $(function() {
 				$('.container').fadeTo(900, 0);
 			}
 			$('.current-image-container, .current-image.active').fadeTo(300, 1, function() {
-			if($(window).width() < 768) {
-				$('body').css('overflow', 'hidden');
-			}
-		      setTimeout(function(){$('.next, .prev, .close').fadeTo(300, 0.7);},100);
+				if($(window).width() < 768) {
+					$('body').css('overflow', 'hidden');
+				}
+				$('.next, .prev, .close').css('z-index','999');
+		      	setTimeout(function(){$('.next, .prev, .close').fadeTo(300, 0.7);},100);
 		    });
 		});
 
@@ -143,7 +147,7 @@ $(function() {
 		$next.data('index', index);
 		$active.data('index', index);
 		$next.show().css('z-index',2);//move the next image up the pile
-		$active.fadeOut(400,function(){//fade out the top image
+		$active.fadeOut(300,function(){//fade out the top image
 			$active.css('z-index',1).removeClass('active').addClass('inactive');//reset the z-index and unhide the image
 			$next.css('z-index',3).removeClass('inactive').addClass('active');//make the next image the top one
 	    });
