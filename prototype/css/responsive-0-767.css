@@ -40,6 +40,10 @@
 		margin-right: -2px;
 	}
 
+	.content .left-section.image-gallery .grid .span4 {
+		height: 200px;
+	}
+
 	.content .left-section, .content .right-section, .bordered {
 		padding-left: 0px;
 		padding-right: 0px;
@@ -47,6 +51,15 @@
 
 	.content .left-section {
 		border-right :0;
+	}
+
+	.content .left-section p {
+		margin-left : 20px;
+	}
+
+	.content .left-section .link {
+		padding: 10px;
+		padding-left: 0px;
 	}
 
 	.content .right-section {
@@ -64,6 +77,14 @@
 
 	input, textarea {
 		width: 90%;
+	}
+
+	.footer .links {
+		font-size: 14pt;
+	}
+
+	.footer .copyright p {
+		font-size: 10pt;
 	}
 
 	.footer ul, .footer p {

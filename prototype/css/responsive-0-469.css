@@ -8,7 +8,13 @@
 		line-height: 16px;
 	}
 
-	
+	.navbar-inner {
+		min-height: 30px;
+	}
+
+	.content .left-section.image-gallery .grid .span4 {
+		height: 160px;
+	}
 
 	.content .current-image-container {
 		position: absolute;
@@ -32,7 +38,13 @@
 		height:300px;
 	}
 
-	
+	.footer .links {
+		font-size: 12pt;
+	}
+
+	.footer .copyright p {
+		font-size: 10pt;
+	}
 
 	
 }

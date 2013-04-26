@@ -1,0 +1,34 @@
+@media (max-width: 319px) {
+	.navbar-inverse .brand img {
+		height: 25px;
+	}
+
+	.navbar .brand {
+		font-size: 16px;
+	}
+
+	.content .left-section.image-gallery .grid .span4 {
+		height: 115px;
+	}
+
+	.content .left-section p {
+		margin-left : 0px;
+	}
+
+	.footer ul {
+		text-align: center;
+	}
+
+	.footer .links {
+		font-size: 10pt;
+	}
+
+	.footer .copyright p {
+		font-size: 8pt;
+	}
+
+	.footer ul, .footer p {
+		padding: 0;
+	}
+		
+}

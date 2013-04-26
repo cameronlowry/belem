@@ -9,7 +9,7 @@ $(function() {
 		  	auto: true,
 	        pager: true,
 	        nav: true,
-	        speed: 500,
+	        speed: 600,
 	        maxwidth: 800,
 	        navContainer: "",
 	        namespace: "large-btns"
@@ -74,16 +74,16 @@ $(function() {
 			if($(window).width() < 768) {
 				$('.container').fadeTo(900, 0);
 			}
-			$('.current-image-container, .current-image.active').fadeTo(600, 1, function() {
+			$('.current-image-container, .current-image.active').fadeTo(300, 1, function() {
 			if($(window).width() < 768) {
 				$('body').css('overflow', 'hidden');
 			}
-		      setTimeout(function(){$('.next, .prev, .close').fadeTo(400, 0.7);},100);
+		      setTimeout(function(){$('.next, .prev, .close').fadeTo(300, 0.7);},100);
 		    });
 		});
 
 		function showImage() {
-			$('.current-image-container, .next, .prev, .close, .current-image.active').fadeTo(600, 0, function() {
+			$('.current-image-container, .next, .prev, .close, .current-image.active').fadeTo(300, 0, function() {
 		      	if($(window).width() < 768) {
 		      		$('body').css('overflow', 'auto');
 	      		}
@@ -95,7 +95,7 @@ $(function() {
 		$('.close, .current-image-container.visible-phone').click(
 		function() {
 			if($(window).width() < 768) {
-				$('.container').fadeTo(600, 1, function() {
+				$('.container').fadeTo(300, 1, function() {
 					showImage();
 		     	});
 	     	} else {
@@ -134,7 +134,11 @@ $(function() {
 	function swapImage(index) {
 		var $active = $('.current-image.active');
 		var $next = $('.current-image.inactive');
-		var gridImage = $('.content .left-section.image-gallery .grid img').get(index);
+		var phone = ".content .left-section.image-gallery .grid .span4.hidden-phone img";
+		if($(window).width() < 768) {
+			phone = ".content .left-section.image-gallery .grid .span4.visible-phone img";
+		}
+		var gridImage = $(phone).get(index);
 		$next.attr('src', $(gridImage).attr('src'));
 		$next.data('index', index);
 		$active.data('index', index);
