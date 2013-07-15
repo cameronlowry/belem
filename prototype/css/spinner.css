@@ -6,6 +6,15 @@ margin-top: 40px;
 margin-left:33%;
 }
 
+#circularG.map-spinner {
+	width:40px;
+	height:40px;
+	margin-top: 0;
+	margin-left:0;
+	top: 45%;
+	left: 45%;
+}
+
 .circularG{
 position:absolute;
 background-color:#C3DAFA;

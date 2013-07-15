@@ -15,18 +15,6 @@
 		margin-left : 0px;
 	}
 
-	.footer ul {
-		text-align: center;
-	}
-
-	.footer .links {
-		font-size: 10pt;
-	}
-
-	.footer .copyright p {
-		font-size: 8pt;
-	}
-
 	.footer ul, .footer p {
 		padding: 0;
 	}

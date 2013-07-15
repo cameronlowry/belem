@@ -6039,11 +6039,13 @@ a.badge:focus {
   text-align: center;
   background: #222222;
   border: 3px solid #ffffff;
-  -webkit-border-radius: 23px;
-     -moz-border-radius: 23px;
-          border-radius: 23px;
+  -webkit-border-radius: 30px;
+     -moz-border-radius: 30px;
+          border-radius: 30px;
   opacity: 0.5;
   filter: alpha(opacity=50);
+  -webkit-box-shadow: 0 0 1px #D0DFF2;
+  z-index: 999;
 }
 
 .carousel-control.right {

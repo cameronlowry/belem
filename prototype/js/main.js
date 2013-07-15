@@ -158,7 +158,8 @@ $(function() {
 	var mapOptions = {
 	  zoom: 15,
 	  center: new google.maps.LatLng(-25.744642, 28.192829),
-	  mapTypeId: google.maps.MapTypeId.ROADMAP
+	  mapTypeId: google.maps.MapTypeId.ROADMAP,
+	  disableDefaultUI: false
 	};
 	map = new google.maps.Map(document.getElementById('map-canvas'),
 	    mapOptions);
@@ -176,18 +177,34 @@ $(function() {
 	TestMarker();
 	}
 
+	var infowindow = new google.maps.InfoWindow({
+      content: "<div class='map-info-title'>Belem Bakery</p><a href='https://maps.google.com/maps?saddr=&daddr=cnr lilian ngoyi st and madiba st, pretoria'>Directions</a>"
+    });
+
+    function addMarkerListener(map, infowindow, marker) {
+	  google.maps.event.addListener(marker, 'click', function() {
+	    infowindow.open(map, marker);
+	  });
+	}
+	
 	// Function for adding a marker to the page.
     function addMarker(location) {
         marker = new google.maps.Marker({
             position: location,
-            map: map
+            map: map,
+            title: 'Belem Bakery',
+            icon: 'img/bread_icon_border.png'
         });
+
+        addMarkerListener(map, infowindow, marker);
     }
+
+	
 
     // Testing the addMarker function
     function TestMarker() {
            Belem = new google.maps.LatLng(-25.744642, 28.192829);
-           addMarker(Belem);
+           addMarker(Belem);           
     }
 
     if(google.maps) {

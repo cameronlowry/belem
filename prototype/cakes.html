@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Belem 2.0 prototype</title>
+    <title>Belem Bakery, Cakes - The best cakes in Pretoria, South Africa.</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description=" content="If you are hosting a celebration and you need a cake please come in and take a look at our full album. We cater for birthdays, twenty-first parties, baptisms, christenings, baby showers, anniversaries, weddings and other special occasions.">
     <!-- Bootstrap -->
     <link href="css/spinner.css" rel="stylesheet">
     <link href="css/bootstrap.css" rel="stylesheet" media="screen">
@@ -12,7 +13,7 @@
     <link href="css/responsive-0-767.css" rel="stylesheet">
     <link href="css/responsive-0-469.css" rel="stylesheet">
     <link href="css/responsive-0-319.css" rel="stylesheet">
-    <link href="css/responsive-768-979.css" rel="stylesheet">    
+    <link href="css/responsive-768-979.css" rel="stylesheet">
     <link href='http://fonts.googleapis.com/css?family=Didact+Gothic' rel='stylesheet' type='text/css'>
   </head>
   <body>
@@ -21,8 +22,12 @@
 		<img data-index="1" class="current-image active" src="" />
 		<img data-index="1" class="current-image inactive" src=""  />
 		<a class="hide carousel-control close">X</a>
-		<a class="hide carousel-control left prev" href="#myCarousel" data-slide="prev">&lsaquo;</a>
-		<a class="hide carousel-control right next" href="#myCarousel" data-slide="next">&rsaquo;</a>  		
+		<a class="hide carousel-control left prev" href="#" data-slide="prev">
+			<div class="triangle-left"></div>
+		</a>
+		<a class="hide carousel-control right next" href="#" data-slide="next">
+			<div class="triangle-right"></div>
+		</a>  		
 	</div>
   	<div class="container">
 	    <div class="row-fluid">
@@ -35,20 +40,20 @@
                   <span class="icon-bar"></span>
                   <span class="icon-bar"></span>
                 </button>
-                <a class="brand" href="./index.html"><img src='img/logotest.png'/>Belem Bakery</a>
+                <a class="brand" href="./index.html"><img src='img/belem_icon_castle.png'/>Belem Bakery</a>
                 <div class="nav-collapse collapse">
                   <ul class="nav">
                     <li class="">
                       <a href="index.html">HOME</a>
                     </li>
                     <li class="">
-                      <a href="#about">ABOUT</a>
+                      <a href="about.html">ABOUT</a>
                     </li>
                     <li class="active">
                       <a href="cakes.html">CAKES</a>
                     </li>
                     <li class="">
-                      <a href="#order">ORDER</a>
+                      <a href="order.html">ORDER</a>
                     </li>
                     <li>
                       <a href="contact.html">CONTACT</a>
@@ -60,13 +65,13 @@
           </div>
 	    		<ul class="nav nav-pills hidden-phone">
 					<li class="divider-right"><a href="index.html">HOME</a></li>
-					<li class="divider-right"><a href="#about">ABOUT</a></li>
+					<li class="divider-right"><a href="about.html">ABOUT</a></li>
 					<li class="active"><a href="cakes.html">CAKES</a></li>
 					<li class="logo">
 						<a href="index.html">
-							<img src='img/logo.png' />
+							<img src='img/belem_logo.png' />
 						</a></li>
-					<li class="divider-right"><a href="#order">ORDER</a></li>
+					<li class="divider-right"><a href="order.html">ORDER</a></li>
 					<li><a href="contact.html">CONTACT</a></li>
 	    		</ul>
 	    	</div>
@@ -74,9 +79,17 @@
 		<div class="content bordered">
 		<span class='rotate cakes hidden-phone'>CAKES</span>
 		<div class="row-fluid">
+			<div class="span4 right-section no-indent visible-phone">
+	    		<h3>Cakes</h3>
+	    		<p>If you are hosting a celebration and you need a cake please come in and take a look at our full album. We cater for birthdays, twenty-first parties, baptisms, christenings, baby showers, anniversaries, weddings and other special occasions.</p>    		
+	    	</div>
 	    	<div id="image-gallery" class="span8 left-section image-gallery">
-	    		<a class="hide carousel-control left prev hidden-phone" href="#myCarousel" data-slide="prev">&lsaquo;</a>
-	    		<a class="hide carousel-control right next hidden-phone" href="#myCarousel" data-slide="next">&rsaquo;</a>
+	    		<a class="hide carousel-control left prev hidden-phone" href="#" data-slide="prev">
+    				<div class="triangle-left"></div>
+	    		</a>
+	    		<a class="hide carousel-control right next hidden-phone" href="#" data-slide="next">
+	    			<div class="triangle-right"></div>
+	    		</a>
 	    		<div class="current-image-container hide hidden-phone">	    			
 		    		<img data-index="1" class="current-image active" src="" />
 		    		<img data-index="1" class="current-image inactive" src=""  />
@@ -175,9 +188,9 @@
 					elements[i].style.display = "none";
 				}
 		  	</script>
-	    	<div class="span4 right-section no-indent">
+	    	<div class="span4 right-section no-indent hidden-phone">
 	    		<h3>Cakes</h3>
-	    		<p>Cake is a form of bread or bread-like food. In its modern forms, it is typically a sweet baked dessert. In its oldest forms, cakes were normally fried breads or cheesecakes, and normally had a disk shape. Determining whether a given food should be classified as bread, cake, or pastry can be difficult.</p>    		
+	    		<p>If you are hosting a celebration and you need a cake please come in and take a look at our full album. We cater for birthdays, twenty-first parties, baptisms, christenings, baby showers, anniversaries, weddings and other special occasions.</p>    		
 	    	</div>
 		</div>
 		</div>
@@ -187,10 +200,10 @@
 		    		<div class="row-fluid links">
 		    			<div class="container">
 			    			<ul class="unstyled">
-								<li class="active"><a href="#findus">FIND US</a></li>
-								<li><a href="#about">Contact us</a></li>
+								<li class="active"><a href="https://maps.google.com/maps?saddr=&daddr=cnr lilian ngoyi st and madiba st, pretoria">Find Us</a></li>
+								<li><a href="contact.html">Contact us</a><p class="phone">012 - 321 7537</p><a class="email" href="mailto:sales@belem.co.za">sales@belem.co.za</li>
 								<li><a href="#cakes">Useful Links</a></li>
-								<li><a href="#order">FAQ</a></li>
+								<li><a href="terms.doc">Terms & Conditions</a></li>
 				    		</ul>
 	    				</div>
 	    			</div>
@@ -209,6 +222,9 @@
     <script src="js/jquery.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/fastclick.js"></script>
+    <script type="text/javascript"
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA_c0Z5owU-gGpAkwyRxNRn4Gc2-Czqp9A&sensor=false">
+    </script>
     <script src="js/main.js"></script>
     
   </body>

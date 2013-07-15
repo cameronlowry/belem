@@ -40,13 +40,21 @@
 		height:300px;
 	}
 
-	.footer .links {
-		font-size: 12pt;
-	}
-
-	.footer .copyright p {
-		font-size: 10pt;
-	}
-
 	
+
+	.footer ul, .footer p {
+		padding-left: 0px;
+	}
+
+	.footer ul li {
+		float: none;
+		width: 100%;
+		padding-top: 20px;
+		padding-bottom: 0;
+	}
+
+	.footer ul {
+		text-align: center;
+		padding: 0;
+	}
 }
