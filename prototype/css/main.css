@@ -384,6 +384,7 @@ img {
     padding: 0;
     z-index: 2;
     background-color: rgba(1,1,1,0.7);
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
 }
 
 .current-image-container.visible-phone .current-image {
@@ -395,6 +396,7 @@ img {
     bottom: 0;
     right: 0;
     margin:auto;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
 }
 
 .current-image-container.visible-phone .close {
@@ -541,10 +543,10 @@ img {
 }
 
 .carousel-control {
-	border: 2px solid #ffffff
+	border: 2px solid #ffffff;
   -webkit-border-radius: 0px;
      -moz-border-radius: 0px;
-          border-radius: 0px;
+          border-radius: 0px; 
 }
 
 .carousel-control.prev {

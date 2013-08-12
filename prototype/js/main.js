@@ -60,6 +60,8 @@ $(function() {
 		$('.next, .prev, .close, .current-image').click( 
 		function(e) {
 			e.stopPropagation();
+			e.preventDefault();
+			return false;
 		});
 
 		$('.content .left-section.image-gallery .grid img').click( 
@@ -73,7 +75,6 @@ $(function() {
 			$('.current-image-container.visible-phone').css('width', '100%');
 			$('.current-image-container.visible-phone').css('height', '100%');
 			$('.current-image-container').css('z-index','2');		
-			$('.current-image-container.visible-phone').css('top',$(window).scrollTop());
 			if($(window).width() < 768) {
 				$('.container').fadeTo(900, 0);
 			}
@@ -136,6 +137,7 @@ $(function() {
 	}
 
 	function swapImage(index) {
+		$('.current-image-container.visible-phone').css('top',$(window).scrollTop());
 		var $active = $('.current-image.active');
 		var $next = $('.current-image.inactive');
 		var phone = ".content .left-section.image-gallery .grid .span4.hidden-phone img";
@@ -205,7 +207,6 @@ $(function() {
     function TestMarker() {
            Belem = new google.maps.LatLng(-25.744642, 28.192829);
            addMarker(Belem);
-
     }
 
     if(google.maps) {
