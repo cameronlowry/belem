@@ -79,8 +79,9 @@
 		width: 90%;
 	}
 
-	.footer ul, .footer p {
-		padding-left: 20px;
+	.footer ul, .footer .copyright {
+		padding-left: 10px;
+		box-sizing: border-box;
 	}
 
 	.row-fluid.grid {

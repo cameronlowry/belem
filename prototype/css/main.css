@@ -312,8 +312,15 @@ img {
 	padding-right: 20px;
 	margin-bottom: -3px;
 	margin-top: -3px;
-	position: relative;
-	
+	position: relative;	
+}
+
+.content .left-section.full {
+	border-right: none;
+}
+
+.phone {
+	font-size: 18px;
 }
 
 .content .left-section.image-gallery img {
@@ -451,8 +458,12 @@ img {
 }
 
 .content .right-section p {
-	margin-left: 20px;
+	margin-left: 0px;
 	font-size: 12pt;
+}
+
+.content .right-section.hidden-phone {
+	padding: 0 10px;
 }
 
 .padded {
@@ -618,8 +629,7 @@ img {
 
 .footer ul li {
 	float: left;
-	width:25%;
-	
+	width:33%;	
 	padding-top: 20px;
 	padding-bottom: 40px;
 }
@@ -642,6 +652,11 @@ img {
 
 .footer .email {
 	font-size: 15px;
+}
+
+.footer .email-alt {
+	font-size: 15px;
+	color: #796345;
 }
 
 .footer .copyright {

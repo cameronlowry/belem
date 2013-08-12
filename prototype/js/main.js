@@ -204,7 +204,8 @@ $(function() {
     // Testing the addMarker function
     function TestMarker() {
            Belem = new google.maps.LatLng(-25.744642, 28.192829);
-           addMarker(Belem);           
+           addMarker(Belem);
+
     }
 
     if(google.maps) {
